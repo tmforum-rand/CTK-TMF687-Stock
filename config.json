@@ -1,0 +1,34 @@
+{
+    "url": "http://localhost:8687/tmf-api/stock/v4/",
+    "headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+    },
+    "payloads": {
+        "ProductStock": {
+            "POST": {
+                "payload": {
+                    "productStockLevel": {
+                        "amount": 24
+                    },
+                    "productStockStatusType": "available",
+                    "stockedProduct": {}
+                }
+            }
+        },
+        "ReserveProductStock": {
+            "POST": {
+                "payload": {
+                    "reserveProductStockItem": [
+                        {
+                            "id": "1",
+                            "quantityRequested": {
+                                "amount": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

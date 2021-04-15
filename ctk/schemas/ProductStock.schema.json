@@ -1,0 +1,1 @@
+{"$schema": "http://json-schema.org/schema#", "type": "object", "properties": {"productStockLevel": {"type": "object", "properties": {"amount": {"type": "integer"}}, "required": ["amount"]}, "productStockStatusType": {"type": "string"}, "stockedProduct": {"type": "object"}}, "required": ["productStockLevel", "productStockStatusType", "stockedProduct"]}
